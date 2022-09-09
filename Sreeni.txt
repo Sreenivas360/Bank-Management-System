@@ -2,17 +2,12 @@
 
 #include<conio.h>
 
-#include<windows.h>
 
 using namespace std;
 
-class Bank{
-
-	private: 
-
-	    int total;
-
-	    string id;
+class Bank{ 
+          public:
+	  int total;
 
 	    struct person{
 
@@ -22,13 +17,7 @@ class Bank{
 
 		}person[100];
 
-	public:
-
-		Bank(){
-
-			total=0;
-
-		}
+	
 
 		void choice();
 
@@ -78,9 +67,7 @@ void Bank::choice(){
 
 	cout<<"7. Exit"<<endl;
 
-	ch=getch();
-
-	system("CLS");
+	
 
 	switch(ch){
 
@@ -338,7 +325,7 @@ void Bank::transactions(){
 
 		     cout<<"Press 2 to withdraw"<<endl;
 
-		     ch=getch();
+		     
 
 		     switch(ch){
 
@@ -365,10 +352,6 @@ void Bank::transactions(){
 		     		if(cash>person[i].cash){
 
 		     			cout<<"Your existing cash is just "<<person[i].cash<<endl;
-
-		     			Sleep(3000);
-
-		     			goto back;
 
 					 }
 
